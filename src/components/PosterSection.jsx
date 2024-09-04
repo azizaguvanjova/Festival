@@ -49,12 +49,12 @@ export default function PosterSection({ date, festivalData }) {
     <div className='lineup-container'>
       <div className='day-container'>
         <h3>{date}</h3>
+        </div>
         {filteredBands.map((band, index) => (
           <p key={index} className={`${getClassByImportance[band.importance]}`}>
             {band.name}
           </p>
         ))}
-      </div>
 
 
       <footer className='footer'>
